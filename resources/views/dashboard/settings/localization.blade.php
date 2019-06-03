@@ -16,7 +16,7 @@
                     @include('partials.errors')
                     <fieldset>
                         <div class="row">
-                            <div class="col-xs-12">
+                            <div class="col-12">
                                 <div class="form-group">
                                     <label>{{ trans('forms.settings.localization.site-timezone') }}</label>
                                     <select name="app_timezone" class="form-control" required>
@@ -35,7 +35,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-xs-12">
+                            <div class="col-12">
                                 <div class="form-group">
                                     <label>
                                         {{ trans('forms.settings.localization.date-format') }}
@@ -46,7 +46,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-xs-12">
+                            <div class="col-12">
                                 <div class="form-group">
                                     <label>
                                         {{ trans('forms.settings.localization.incident-date-format') }}
@@ -57,7 +57,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-xs-12">
+                            <div class="col-12">
                                 <div class="form-group">
                                     <label>{{ trans('forms.settings.localization.site-locale') }}</label>
                                     <select name="app_locale" class="form-control" required>
@@ -72,7 +72,7 @@
                             </div>
                         </div>
                          <div class="row">
-                            <div class="col-xs-12">
+                            <div class="col-12">
                                 <div class="checkbox">
                                     <label>
                                         <input type="hidden" value="0" name="automatic_localization">
@@ -85,7 +85,7 @@
                     </fieldset>
 
                     <div class="row">
-                        <div class="col-xs-12">
+                        <div class="col-12">
                             <div class="form-group">
                                 <button type="submit" class="btn btn-success">{{ trans('forms.save') }}</button>
                             </div>

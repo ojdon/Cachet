@@ -16,7 +16,7 @@
                     @include('partials.errors')
                     <fieldset>
                         <div class="row">
-                            <div class="col-xs-12">
+                            <div class="col-12">
                                 <div class="form-group">
                                     <label>{{ trans('forms.settings.app-setup.site-name') }}</label>
                                     <input type="text" class="form-control" name="app_name" value="{{ $appName }}" required placeholder="{{ trans('forms.settings.app-setup.site-name') }}">
@@ -24,7 +24,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-xs-12">
+                            <div class="col-12">
                                 <div class="form-group">
                                     <label>{{ trans('forms.settings.app-setup.site-url') }}</label>
                                     <input type="text" class="form-control" name="app_domain" value="{{ $appDomain }}" required placeholder="{{ trans('forms.settings.app-setup.site-url') }}">
@@ -32,7 +32,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-xs-12">
+                            <div class="col-12">
                                 <div class="form-group">
                                     <label>{{ trans('forms.settings.app-setup.about-this-page') }}</label>
                                     <div class='markdown-control'>
@@ -42,7 +42,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-xs-12">
+                            <div class="col-12">
                                 <div class="form-group">
                                     <label>{{ trans('forms.settings.app-setup.days-of-incidents') }}</label>
                                     <input type="number" max="100" name="app_incident_days" class="form-control" value="{{ Config::get('setting.app_incident_days', 7) }}" placeholder="{{ trans('forms.settings.app-setup.days-of-incidents') }}">
@@ -50,7 +50,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-xs-12">
+                            <div class="col-12">
                                 <div class="form-group">
                                     <label>{{ trans('forms.settings.app-setup.time_before_refresh') }}</label>
                                     <input type="number" name="app_refresh_rate" class="form-control" value="{{ Config::get('setting.app_refresh_rate', 0) }}" placeholder="{{ trans('forms.settings.app-setup.time_before_refresh') }}">
@@ -58,7 +58,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-xs-12">
+                            <div class="col-12">
                                 <div class="form-group">
                                     <label>{{ trans('forms.settings.app-setup.major_outage_rate') }}</label>
                                     <input type="number" name="major_outage_rate" class="form-control" value="{{ Config::get('setting.major_outage_rate', 50) }}" placeholder="{{ trans('forms.settings.app-setup.major_outage_rate') }}">
@@ -66,7 +66,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-xs-12">
+                            <div class="col-12">
                                 <div class="checkbox">
                                     <label>
                                         <input type="hidden" value="0" name="enable_subscribers">
@@ -77,7 +77,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-xs-12">
+                            <div class="col-12">
                                 <div class="checkbox">
                                     <label>
                                         <input type="hidden" value="0" name="suppress_notifications_in_maintenance">
@@ -88,7 +88,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-xs-12">
+                            <div class="col-12">
                                 <div class="checkbox">
                                     <label>
                                         <input type="hidden" value="0" name="skip_subscriber_verification">
@@ -99,7 +99,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-xs-12">
+                            <div class="col-12">
                                 <div class="checkbox">
                                     <label>
                                         <input type="hidden" value="0" name="display_graphs">
@@ -110,7 +110,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-xs-12">
+                            <div class="col-12">
                                 <div class="checkbox">
                                     <label>
                                         <input type="hidden" value="0" name="show_support">
@@ -121,7 +121,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-xs-12">
+                            <div class="col-12">
                                 <div class="checkbox">
                                     <label>
                                         <input type="hidden" value="0" name="enable_external_dependencies">
@@ -132,7 +132,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-xs-12">
+                            <div class="col-12">
                                 <div class="checkbox">
                                     <label>
                                         <input type="hidden" value="0" name="show_timezone">
@@ -143,7 +143,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-xs-12">
+                            <div class="col-12">
                                 <div class="checkbox">
                                     <label>
                                         <input type="hidden" value="0" name="only_disrupted_days">
@@ -156,7 +156,7 @@
                     </fieldset>
 
                     <div class="row">
-                        <div class="col-xs-12">
+                        <div class="col-12">
                             <div class="form-group">
                                 <button type="submit" class="btn btn-success">{{ trans('forms.save') }}</button>
                             </div>

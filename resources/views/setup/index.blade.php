@@ -7,7 +7,7 @@
     <div class="text-center">
         <img class="logo" height="90" src="{{ asset('img/cachet-logo.svg') }}" alt="{{ trans('setup.title') }}">
     </div>
-    <div class="col-xs-12 col-xs-offset-0 col-sm-8 col-sm-offset-2">
+    <div class="mx-auto col-sm-8">
         <div class="steps">
             <div class="step active">
                 {{ trans('setup.env_setup') }}
@@ -35,7 +35,7 @@
                     <fieldset>
                         <div class="form-group">
                             <div class="row">
-                                <div class="col-xs-4">
+                                <div class="col-4">
                                     <label>{{ trans('forms.setup.cache_driver') }}</label>
                                     <select name="env[cache_driver]" class="form-control" required v-model="env.cache_driver">
                                         <option disabled>{{ trans('forms.setup.cache_driver') }}</option>
@@ -47,7 +47,7 @@
                                     <span class="text-danger">{{ $errors->first('env.cache_driver') }}</span>
                                     @endif
                                 </div>
-                                <div class="col-xs-4">
+                                <div class="col-4">
                                     <label>{{ trans('forms.setup.queue_driver') }}</label>
                                     <select name="env[queue_driver]" class="form-control" required v-model="env.queue_driver">
                                         <option disabled>{{ trans('forms.setup.queue_driver') }}</option>
@@ -59,7 +59,7 @@
                                     <span class="text-danger">{{ $errors->first('env.queue_driver') }}</span>
                                     @endif
                                 </div>
-                                <div class="col-xs-4">
+                                <div class="col-4">
                                     <label>{{ trans('forms.setup.session_driver') }}</label>
                                     <select name="env[session_driver]" class="form-control" required v-model="env.session_driver">
                                         <option disabled>{{ trans('forms.setup.session_driver') }}</option>

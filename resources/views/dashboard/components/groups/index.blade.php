@@ -18,7 +18,7 @@
             <div class="col-sm-12 striped-list" data-orderable-list="/dashboard/api/components/groups/order">
                 @forelse($groups as $group)
                 <div class="row striped-list-item" data-orderable-id="{{ $group->id }}">
-                    <div class="col-xs-6">
+                    <div class="col-6">
                         <h4>
                             @if($groups->count() > 1)
                             <span class="drag-handle"><i class="ion ion-drag"></i></span>
@@ -27,7 +27,7 @@
                             <span class="label label-info">{{ $group->components->count() }}</span>
                         </h4>
                     </div>
-                    <div class="col-xs-6 text-right">
+                    <div class="col-6 text-right">
                         <a href="{{ cachet_route('dashboard.components.groups.edit', [$group->id]) }}" class="btn btn-default">{{ trans('forms.edit') }}</a>
                         <a href="{{ cachet_route('dashboard.components.groups.delete', [$group->id], 'delete') }}" class="btn btn-danger confirm-action" data-method="DELETE">{{ trans('forms.delete') }}</a>
                     </div>

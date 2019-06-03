@@ -22,7 +22,7 @@
                         <i class="icon ion-android-calendar"></i>
                     </div>
                 </div>
-                <div class="col-xs-10 col-xs-offset-2 col-sm-11 col-sm-offset-0">
+                <div class="col-10 col-offset-2 col-sm-11 col-sm-offset-0">
                     <div class="panel panel-message incident">
                         <div class="panel-heading">
                             <strong>{{ $schedule->name }}</strong>{{ trans("cachet.incidents.scheduled_at", ["timestamp" => $schedule->scheduled_at_diff]) }}

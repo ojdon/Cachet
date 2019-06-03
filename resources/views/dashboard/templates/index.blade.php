@@ -19,10 +19,10 @@
             <div class="striped-list">
                 @forelse($incidentTemplates as $template)
                 <div class="row striped-list-item">
-                    <div class="col-xs-6">
+                    <div class="col-6">
                         <strong>{{ $template->name }}</strong>
                     </div>
-                    <div class="col-xs-6 text-right">
+                    <div class="col-6 text-right">
                         <a href="{{ cachet_route('dashboard.templates.edit', [$template->id]) }}" class="btn btn-default">{{ trans('forms.edit') }}</a>
                         <a href="{{ cachet_route('dashboard.templates.delete', [$template->id], 'delete') }}" class="btn btn-danger confirm-action" data-method='DELETE'>{{ trans('forms.delete') }}</a>
                     </div>

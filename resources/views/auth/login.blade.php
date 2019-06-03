@@ -35,7 +35,7 @@
                 </div>
                 <div class="form-group">
                     <div class="row">
-                        <div class="col-xs-2">
+                        <div class="col-2">
                             @if(!config('setting.always_authenticate', false))
                             <a class="btn btn-default btn-lg btn-trans" href="{{ cachet_route('status-page') }}">
                                 <span class="text-center">
@@ -44,7 +44,7 @@
                             </a>
                             @endif
                         </div>
-                        <div class="col-xs-9 col-xs-push-1">
+                        <div class="col-9 col-push-1">
                             <button type="submit" class="btn btn-success btn-lg btn-block btn-trans">{{ trans('dashboard.login.login') }}</button>
                         </div>
                     </div>

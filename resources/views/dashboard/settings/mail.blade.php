@@ -43,7 +43,7 @@
                     </fieldset>
 
                     <div class="row">
-                        <div class="col-xs-12">
+                        <div class="col-12">
                             <div class="form-group">
                                 <button type="submit" class="btn btn-success">{{ trans('forms.save') }}</button>
                                 <a href="{{ cachet_route('dashboard.settings.mail.test', null, 'post') }}" class="btn btn-info confirm-action" data-method='POST'>{{ trans('dashboard.settings.mail.test') }}</a>

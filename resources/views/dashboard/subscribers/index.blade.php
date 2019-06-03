@@ -29,17 +29,17 @@
             <div class="striped-list">
                 @foreach($subscribers as $subscriber)
                 <div class="row striped-list-item">
-                    <div class="col-xs-3">
+                    <div class="col-3">
                         <p>{{ trans('dashboard.subscribers.subscriber', ['email' => $subscriber->email, 'date' => $subscriber->created_at]) }}</p>
                     </div>
-                    <div class="col-xs-3">
+                    <div class="col-3">
                         @if(is_null($subscriber->getOriginal('verified_at')))
                         <b class="text-danger">{{ trans('dashboard.subscribers.not_verified') }}</b>
                         @else
                         <b class="text-success">{{ trans('dashboard.subscribers.verified') }}</b>
                         @endif
                     </div>
-                    <div class="col-xs-3">
+                    <div class="col-3">
                         @if($subscriber->global)
                         <p>{{ trans('dashboard.subscribers.global') }}</p>
                         @elseif($subscriber->subscriptions->isNotEmpty())
@@ -50,7 +50,7 @@
                         <p>{{ trans('dashboard.subscribers.no_subscriptions') }}</p>
                         @endif
                     </div>
-                    <div class="col-xs-3 text-right">
+                    <div class="col-3 text-right">
                         <a href="{{ cachet_route('dashboard.subscribers.delete', [$subscriber->id], 'delete') }}" class="btn btn-danger confirm-action" data-method='DELETE'>{{ trans('forms.delete') }}</a>
                     </div>
                 </div>

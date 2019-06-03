@@ -16,7 +16,7 @@
                     @include('partials.errors')
                     <fieldset>
                         <div class="row">
-                            <div class="col-xs-12">
+                            <div class="col-12">
                                 <div class="form-group">
                                     <label>{{ trans('forms.settings.stylesheet.custom-css') }}</label>
                                     <textarea class="form-control autosize" name="stylesheet" rows="10" placeholder="{{ trans('forms.settings.stylesheet.custom-css') }}">{{ Config::get('setting.stylesheet') }}</textarea>
@@ -26,7 +26,7 @@
                     </fieldset>
 
                     <div class="row">
-                        <div class="col-xs-12">
+                        <div class="col-12">
                             <div class="form-group">
                                 <button type="submit" class="btn btn-success">{{ trans('forms.save') }}</button>
                             </div>

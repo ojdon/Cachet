@@ -9,7 +9,7 @@
                         <i class="{{ $incident->latest_icon }}"></i>
                     </div>
                 </div>
-                <div class="col-xs-10 col-xs-offset-2 col-sm-11 col-sm-offset-0">
+                <div class="col-10 col-offset-2 col-sm-11 col-sm-offset-0">
                     <div class="panel panel-message incident">
                         <div class="panel-heading">
                             @if($currentUser)

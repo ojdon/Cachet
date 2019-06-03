@@ -14,7 +14,7 @@
 @include('partials.errors')
 
 <div class="row">
-    <div class="col-xs-12 col-lg-offset-2 col-lg-8">
+    <div class="col-12 col-lg-offset-2 col-lg-8">
         <div class="panel panel-default">
             <div class="panel-heading">{{ trans('cachet.subscriber.subscribe') }}</div>
             <div class="panel-body">

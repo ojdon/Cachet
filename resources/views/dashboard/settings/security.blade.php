@@ -16,7 +16,7 @@
                     @include('partials.errors')
                     <fieldset>
                         <div class="row">
-                            <div class="col-xs-12">
+                            <div class="col-12">
                                 <label>{{ trans('forms.settings.security.always-authenticate') }}</label>
                                 <div class="checkbox">
                                     <label>
@@ -28,7 +28,7 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-xs-12">
+                            <div class="col-12">
                                 <div class="form-group">
                                     <label>{{ trans('forms.settings.security.allowed-domains') }}</label>
                                     <textarea class="form-control" name="allowed_domains" rows="5" placeholder="http://cachet.io, http://cachet.herokuapp.com">{{ Config::get('setting.allowed_domains') }}</textarea>
@@ -41,7 +41,7 @@
                     </fieldset>
 
                     <div class="row">
-                        <div class="col-xs-12">
+                        <div class="col-12">
                             <div class="form-group">
                                 <button type="submit" class="btn btn-success">{{ trans('forms.save') }}</button>
                             </div>

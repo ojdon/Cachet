@@ -11,7 +11,7 @@
 @include('partials.errors')
 
 <div class="row">
-    <div class="col-xs-12 col-lg-offset-2 col-lg-8">
+    <div class="col-12 col-lg-offset-2 col-lg-8">
         <div class="text-center margin-bottom">
             <h1>{{ $appName }} {{ trans('cachet.subscriber.manage.notifications') }}</h1>
             <p>{{ trans('cachet.subscriber.manage.notifications_for') }} <strong>{{ $subscriber->email }}</strong></p>

@@ -21,7 +21,7 @@
                 <div class="striped-list">
                     @foreach($schedule as $incident)
                     <div class="row striped-list-item">
-                        <div class="col-xs-6">
+                        <div class="col-6">
                             <strong>{{ $incident->name }}</strong>
                             <br>
                             {{ trans('dashboard.schedule.scheduled_at', ['timestamp' => $incident->scheduled_at_formatted]) }}
@@ -29,7 +29,7 @@
                             <p><small>{{ Str::words($incident->message, 5) }}</small></p>
                             @endif
                         </div>
-                        <div class="col-xs-6 text-right">
+                        <div class="col-6 text-right">
                             <a href="{{ cachet_route('dashboard.schedule.edit', [$incident->id]) }}" class="btn btn-default">{{ trans('forms.edit') }}</a>
                             <a href="{{ cachet_route('dashboard.schedule.delete', [$incident->id], 'delete') }}" class="btn btn-danger confirm-action" data-method='DELETE'>{{ trans('forms.delete') }}</a>
                         </div>

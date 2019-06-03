@@ -18,7 +18,7 @@
             <div class="col-sm-12 striped-list" data-orderable-list="/dashboard/api/components/order">
                 @forelse($components as $component)
                 <div class="row striped-list-item {{ !$component->enabled ? 'bg-warning' : null }}" data-orderable-id="{{ $component->id }}">
-                    <div class="col-xs-6">
+                    <div class="col-6">
                         <h4>
                             @if($components->count() > 1)
                             <span class="drag-handle"><i class="ion ion-drag"></i></span>
@@ -32,7 +32,7 @@
                         <p>{{ $component->description }}</p>
                         @endif
                     </div>
-                    <div class="col-xs-6 text-right">
+                    <div class="col-6 text-right">
                         <a href="{{ cachet_route('dashboard.components.edit', [$component->id]) }}" class="btn btn-default">{{ trans('forms.edit') }}</a>
                         <a href="{{ cachet_route('dashboard.components.delete', [$component->id], 'delete') }}" class="btn btn-danger confirm-action" data-method="DELETE">{{ trans('forms.delete') }}</a>
                     </div>
