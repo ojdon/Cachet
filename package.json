@@ -35,5 +35,8 @@
     "vue": "^2.6.10",
     "vue-template-compiler": "^2.6.10"
   },
-  "private": true
+  "private": true,
+  "dependencies": {
+    "bootstrap": "^4.3.1"
+  }
 }
