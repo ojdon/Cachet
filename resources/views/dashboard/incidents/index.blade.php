@@ -22,7 +22,7 @@
                     @foreach($incidents as $incident)
                     <div class="row striped-list-item">
                         <div class="col-6">
-                            <i class="{{ $incident->icon }}"></i> <strong>{{ $incident->name }}</strong> <span class="badge badge-info">{{ trans_choice('dashboard.incidents.updates.count', $incident->updates()->count()) }}</span>
+                            <i class="{{ $incident->icon }}"></i> <strong>{{ $incident->name }}</strong> <span class="badge badge-pill badge-info">{{ trans_choice('dashboard.incidents.updates.count', $incident->updates()->count()) }}</span>
                             @if($incident->message)
                             <p>{{ Str::words($incident->message, 5) }}</p>
                             @endif
