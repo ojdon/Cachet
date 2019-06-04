@@ -1,5 +1,5 @@
 <div class="sub-sidebar">
-    <div class="sidebar-toggler visible-xs">
+    <div class="sidebar-toggler d-sm-none">
         <i class="ion ion-navicon"></i>
     </div>
     <h3>{{ $subTitle }}</h3>

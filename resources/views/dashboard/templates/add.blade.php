@@ -22,7 +22,7 @@ window.addEventListener("DOMContentLoaded", function(e) {
 
 @section('content')
 <div class="header">
-    <div class="sidebar-toggler visible-xs">
+    <div class="sidebar-toggler d-sm-none">
         <i class="ion ion-navicon"></i>
     </div>
     <span class="uppercase">

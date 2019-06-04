@@ -4,7 +4,7 @@
 <dashboard inline-template :welcome-user="{{ $welcomeUser ? 'true' : 'false' }}" :user="{{ $currentUser }}">
     <div>
         <div class="header">
-            <div class="sidebar-toggler visible-xs">
+            <div class="sidebar-toggler d-sm-none">
                 <i class="ion ion-navicon"></i>
             </div>
             <span class="uppercase">
@@ -20,7 +20,7 @@
 
             <div class="row">
               <div class="col-md-12">
-                  <div class="section-components no-select">
+                  <div class="section-components no-select mb-3">
                       @if(!$componentGroups->isEmpty() || !$ungroupedComponents->isEmpty())
                       @include('dashboard.partials.components')
                       @else
