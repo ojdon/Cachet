@@ -12,8 +12,8 @@
 
                 <br>
 
-                <div class="panel">
-                    <div class="panel-body">
+                <div class="card">
+                    <div class="card-body">
                         <div class="text-center">
                             <h3>{{ trans('dashboard.login.two-factor') }}</h3>
                         </div>

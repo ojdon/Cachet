@@ -15,9 +15,9 @@
 
 <div class="row">
     <div class="col-lg-8 mx-auto">
-        <div class="panel panel-default">
-            <div class="panel-heading">{{ trans('cachet.subscriber.subscribe') }}</div>
-            <div class="panel-body">
+        <div class="cardpanel-default">
+            <div class="card-heading">{{ trans('cachet.subscriber.subscribe') }}</div>
+            <div class="card-body">
                 <form action="{{ cachet_route('subscribe', [], 'post') }}" method="POST" class="form">
                     <input type="hidden" name="_token" value="{{ csrf_token() }}">
                     <div class="form-group">

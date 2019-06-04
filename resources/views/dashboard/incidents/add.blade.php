@@ -95,8 +95,8 @@
                         @endif
                         <div class="form-group" id="component-status" v-if="component.id">
                             <label>{{ trans('forms.incidents.component_status') }}</label>
-                            <div class="panel panel-default">
-                                <div class="panel-body">
+                            <div class="cardpanel-default">
+                                <div class="card-body">
                                     <div class="radio-items">
                                         @foreach(trans('cachet.components.status') as $statusID => $status)
                                         <div class="radio-inline">

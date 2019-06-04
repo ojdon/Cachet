@@ -52,8 +52,8 @@
                     @if($incident->component)
                     <div class="form-group hidden" id="component-status">
                         <input type="hidden" name="component_id" value="{{ $incident->component->id }}">
-                        <div class="panel panel-default">
-                            <div class="panel-body">
+                        <div class="cardpanel-default">
+                            <div class="card-body">
                                 <div class="radio-items">
                                     @foreach(trans('cachet.components.status') as $statusID => $status)
                                     <div class="radio-inline">
@@ -84,9 +84,9 @@
                     </div>
                     @if($incident->component)
                     <div class="form-group" id="component-status">
-                        <div class="panel panel-default">
-                            <div class="panel-heading"><strong>{{ $incident->component->name }}</strong></div>
-                            <div class="panel-body">
+                        <div class="cardpanel-default">
+                            <div class="card-heading"><strong>{{ $incident->component->name }}</strong></div>
+                            <div class="card-body">
                                 <div class="radio-items">
                                     @foreach(trans('cachet.components.status') as $statusID => $status)
                                     <div class="radio-inline">

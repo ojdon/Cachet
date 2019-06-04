@@ -1,6 +1,6 @@
 <div class="timeline schedule">
-    <div class="panel panel-default">
-        <div class="panel-heading">
+    <div class="cardpanel-default">
+        <div class="card-heading">
             <strong>{{ trans('cachet.incidents.scheduled') }}</strong>
         </div>
         <div class="list-group">

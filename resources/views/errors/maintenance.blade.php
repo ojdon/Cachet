@@ -1,11 +1,11 @@
 @extends('layout.master')
 
 @section('content')
-<div class="panel panel-info">
-    <div class="panel-heading">
+<div class="cardpanel-info">
+    <div class="card-heading">
         <strong>Under Maintenance</strong>
     </div>
-    <div class="panel-body">
+    <div class="card-body">
         <p>We're currently under maintenance, come back shortly.</p>
     </div>
 </div>

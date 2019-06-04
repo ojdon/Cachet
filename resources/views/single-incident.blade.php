@@ -31,8 +31,8 @@
                     </div>
                 </div>
                 <div class="col-10 col-offset-2 col-sm-11 col-sm-offset-0">
-                    <div class="panel panel-message incident">
-                        <div class="panel-body">
+                    <div class="cardpanel-message incident">
+                        <div class="card-body">
                             @if($currentUser)
                             <div class="pull-right btn-group">
                                 <a href="{{ cachet_route('dashboard.incidents.updates.edit', ['incident' => $incident, 'incident_update' => $update]) }}" class="btn btn-default">{{ trans('forms.edit') }}</a>
@@ -42,7 +42,7 @@
                                 {!! $update->formatted_message !!}
                             </div>
                         </div>
-                        <div class="panel-footer">
+                        <div class="card-footer">
                             <small>
                                 <span data-toggle="tooltip" title="
                                     {{ trans('cachet.incidents.posted_at', ['timestamp' => $update->created_at_formatted]) }}">

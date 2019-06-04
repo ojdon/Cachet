@@ -23,11 +23,11 @@
 
 @include('partials.errors')
 
-<div class="panel panel-message">
-    <div class="panel-heading">
+<div class="cardpanel-message">
+    <div class="card-heading">
         <strong>{{ trans('cachet.signup.title') }}</strong>
     </div>
-    <div class="panel-body">
+    <div class="card-body">
         <form action="{{ cachet_route('signup.invite', ['code' => $code]) }}" method="post" class="form">
             <input type="hidden" name="_token" value="{{ csrf_token() }}">
             <div class="form-group">
