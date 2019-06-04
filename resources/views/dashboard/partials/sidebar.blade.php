@@ -11,8 +11,8 @@
         <div class="clearfix"></div>
         <div class="quick-add-incident">
             <a class="btn btn-block btn-info" href="{{ cachet_route('dashboard.incidents.create') }}">
-                <i class="ion ion-android-checkmark-circle visible-sm"></i>
-                <span class="hidden-sm">{{ trans('dashboard.incidents.add.title') }}</span>
+                <i class="ion ion-android-checkmark-circle d-sm-none"></i>
+                <span class="d-sm-block">{{ trans('dashboard.incidents.add.title') }}</span>
             </a>
         </div>
         <ul>
@@ -77,7 +77,7 @@
                     </span>
                 </a>
             </li>
-            <li class="hidden-lg hidden-md">
+            <li class="d-md-none">
                 <a href="{{ cachet_route('auth.logout') }}">
                     <i class="ion ion-log-out"></i>
                 </a>

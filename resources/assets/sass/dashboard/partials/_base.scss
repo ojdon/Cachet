@@ -31,13 +31,13 @@ body.dashboard {
         margin-right: -$sidebar-normal-width;;
     }
 
-    @include media-breakpoint-only(sm) {
+    @include media-breakpoint-down(sm) {
         .wrapper {
             padding-left: 80px;
         }
     }
 
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-up(md) {
         .wrapper {
             padding-left: $sidebar-normal-width;
         }
