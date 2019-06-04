@@ -6,8 +6,8 @@
 <div class="container">
     <div class="row">
         <div class="form-bg">
-            <div class="logo">
-                <img src="{{ asset('/img/cachet-logo@2x.png') }}" class="img-responsive">
+            <div class="logo text-center">
+                <img src="{{ asset('/img/cachet-logo@2x.png') }}" class="img-fluid">
             </div>
 
             <form method="POST" action="{{ cachet_route('auth.login', [], 'post') }}" accept-charset="UTF-8" autocomplete="off" name="{{ str_random(10) }}">
@@ -35,16 +35,16 @@
                 </div>
                 <div class="form-group">
                     <div class="row">
-                        <div class="col-2">
+                        <div class="col-4">
                             @if(!config('setting.always_authenticate', false))
-                            <a class="btn btn-default btn-lg btn-trans" href="{{ cachet_route('status-page') }}">
+                            <a class="btn btn-default btn-lg btn-block btn-trans" href="{{ cachet_route('status-page') }}">
                                 <span class="text-center">
                                     <i class="ion ion-home"></i>
                                 </span>
                             </a>
                             @endif
                         </div>
-                        <div class="col-9 col-push-1">
+                        <div class="col-8">
                             <button type="submit" class="btn btn-success btn-lg btn-block btn-trans">{{ trans('dashboard.login.login') }}</button>
                         </div>
                     </div>
