@@ -52,10 +52,10 @@ body.dashboard {
                 @extend .text-center;
                 padding: 10px;
                 i {
-                    @extend .d-sm-block;
+                    @extend .d-sm-none;
                 }
                 span {
-                    @extend .d-sm-none;
+                    @extend .d-sm-block;
                 }
             }
             ul {
@@ -124,12 +124,18 @@ body.dashboard {
             }
             & > ul > li > a {
                 & > span {
-                    @extend .d-sm-none;
+                    @extend .d-none;
+                    @extend .d-sm-inline-block;
+                }
+                .badge {
+                    @extend .d-none;
+                    @extend .d-sm-inline-block;
                 }
             }
         }
         .bottom-menu-sidebar {
-            @extend .d-sm-none;
+            @extend .d-none;
+            @extend .d-sm-inline-block;
             position: fixed;
             bottom: 0;
             width: 235px;
