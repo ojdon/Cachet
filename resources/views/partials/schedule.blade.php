@@ -1,5 +1,5 @@
 <div class="timeline schedule">
-    <div class="cardpanel-default">
+    <div class="card -default">
         <div class="card-heading">
             <strong>{{ trans('cachet.incidents.scheduled') }}</strong>
         </div>

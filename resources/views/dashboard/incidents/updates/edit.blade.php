@@ -47,7 +47,7 @@
                     </div>
                     @if($incident->component)
                     <div class="form-group" id="component-status">
-                        <div class="cardpanel-default">
+                        <div class="card -default">
                             <div class="card-heading"><strong>{{ $incident->component->name }}</strong></div>
                             <div class="card-body">
                                 <div class="radio-items">

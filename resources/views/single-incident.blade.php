@@ -31,7 +31,7 @@
                     </div>
                 </div>
                 <div class="col-10 col-offset-2 col-sm-11 col-sm-offset-0">
-                    <div class="cardpanel-message incident">
+                    <div class="card -message incident">
                         <div class="card-body">
                             @if($currentUser)
                             <div class="pull-right btn-group">

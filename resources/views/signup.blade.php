@@ -23,7 +23,7 @@
 
 @include('partials.errors')
 
-<div class="cardpanel-message">
+<div class="card -message">
     <div class="card-heading">
         <strong>{{ trans('cachet.signup.title') }}</strong>
     </div>

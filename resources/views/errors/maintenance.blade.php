@@ -1,7 +1,7 @@
 @extends('layout.master')
 
 @section('content')
-<div class="cardpanel-info">
+<div class="card -info">
     <div class="card-heading">
         <strong>Under Maintenance</strong>
     </div>

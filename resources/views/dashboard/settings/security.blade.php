@@ -51,7 +51,7 @@
                     @if(!$unsecureUsers->isEmpty())
                     <hr>
 
-                    <div class="cardpanel-danger">
+                    <div class="card -danger">
                         <div class="card-heading">{{ trans('dashboard.settings.security.two-factor') }}</div>
                         <div class="list-group">
                             @foreach($unsecureUsers as $user)

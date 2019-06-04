@@ -15,7 +15,7 @@
 
 <div class="row">
     <div class="col-lg-8 mx-auto">
-        <div class="cardpanel-default">
+        <div class="card -default">
             <div class="card-heading">{{ trans('cachet.subscriber.subscribe') }}</div>
             <div class="card-body">
                 <form action="{{ cachet_route('subscribe', [], 'post') }}" method="POST" class="form">
