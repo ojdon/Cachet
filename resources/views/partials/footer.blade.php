@@ -17,17 +17,17 @@
             <div class="col-sm-8">
                 <ul class="list-inline">
                     @if($currentUser || $dashboardLink)
-                    <li>
+                    <li class="list-inline-item">
                         <a class="btn btn-link" href="{{ cachet_route('dashboard') }}">{{ trans('dashboard.dashboard') }}</a>
                     </li>
                     @endif
                     @if($currentUser)
-                    <li>
+                    <li class="list-inline-item">
                         <a class="btn btn-link" href="{{ cachet_route('auth.logout') }}">{{ trans('dashboard.logout') }}</a>
                     </li>
                     @endif
                     @if($enableSubscribers)
-                    <li>
+                    <li class="list-inline-item">
                         <a class="btn btn-success btn-outline" href="{{ cachet_route('subscribe') }}">{{ trans('cachet.subscriber.button') }}</a>
                     </li>
                     @endif
