@@ -15891,6 +15891,10 @@ body {
   margin-bottom: 20px;
 }
 
+.hidden {
+  display: none;
+}
+
 .no-select {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -16035,13 +16039,13 @@ textarea {
 }
 
 .btn.btn-default {
-  background: #6c757d;
-  border: solid 1px #545b62;
+  background: #f8f9fa;
+  border: solid 1px #dae0e5;
 }
 
 .btn.btn-default:hover, .btn.btn-default:focus, .btn.btn-default:active, .btn.btn-default.active {
-  background: #60686f;
-  border-color: #545b62;
+  background: #e9ecef;
+  border-color: #dae0e5;
   outline: none;
   outline-offset: 0;
 }
@@ -16052,8 +16056,8 @@ fieldset[disabled] .btn.btn-default:hover,
 fieldset[disabled] .btn.btn-default:focus,
 fieldset[disabled] .btn.btn-default:active,
 fieldset[disabled] .btn.btn-default.active {
-  background-color: #78828a;
-  border-color: #545b62;
+  background-color: white;
+  border-color: #dae0e5;
 }
 
 .btn.btn-primary {

@@ -30,7 +30,7 @@
 
 .btn {
     &.btn-default {
-        @include pretty-buttons(map-get($colors, 'dark'), map-get($theme-colors, 'secondary'));
+        @include pretty-buttons(map-get($colors, 'dark'), map-get($theme-colors, 'light'));
     }
     &.btn-primary {
         //@include pretty-buttons($btn-primary-color, $btn-primary-bg);
