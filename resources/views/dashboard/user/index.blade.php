@@ -19,7 +19,7 @@
                     <div class="row">
                         <div class="col-sm-12">
                             <div class="form-group">
-                                <a href="https://gravatar.com"><img src="{{ $currentUser->avatar }}" class="img-responsive img-thumbnail" title="{{ trans('forms.user.gravatar') }}" data-toggle="tooltip"></a>
+                                <a href="https://gravatar.com"><img src="{{ $currentUser->avatar }}" class="img-fluid img-thumbnail" title="{{ trans('forms.user.gravatar') }}" data-toggle="tooltip"></a>
                             </div>
                             <div class="form-group">
                                 <label>{{ trans('forms.user.username') }}</label>
@@ -59,7 +59,7 @@
                                     $currentUser->google_2fa_secret
                                 );
                                 ?>
-                                <img src="{{ $google2fa_url }}" class="img-responsive">
+                                <img src="{{ $google2fa_url }}" class="img-fluid">
                                 <span class='help-block'>{!! trans('forms.user.2fa.help') !!}</span>
                             </div>
                             @endif
