@@ -26,28 +26,28 @@
                 <a href="{{ cachet_route('dashboard.incidents') }}">
                     <i class="ion ion-ios-information-outline"></i>
                     <span>{{ trans('dashboard.incidents.incidents') }}</span>
-                    <span class="label label-info">{{ $incidentCount }}</span>
+                    <span class="badge badge-info">{{ $incidentCount }}</span>
                 </a>
             </li>
             <li {!! set_active('dashboard/templates*') !!}>
                 <a href="{{ cachet_route('dashboard.templates') }}">
                     <i class="ion ion-ios-paper-outline"></i>
                     <span>{{ trans('dashboard.incidents.incident-templates') }}</span>
-                    <span class="label label-info">{{ $incidentTemplateCount }}</span>
+                    <span class="badge badge-info">{{ $incidentTemplateCount }}</span>
                 </a>
             </li>
             <li {!! set_active('dashboard/schedule*') !!}>
                 <a href="{{ cachet_route('dashboard.schedule') }}">
                     <i class="ion ion-android-calendar"></i>
                     <span>{{ trans('dashboard.schedule.schedule') }}</span>
-                    <span class="label label-info">{{ $scheduleCount }}</span>
+                    <span class="badge badge-info">{{ $scheduleCount }}</span>
                 </a>
             </li>
             <li {!! set_active('dashboard/components*') !!}>
                 <a href="{{ cachet_route('dashboard.components') }}">
                     <i class="ion ion-ios-browsers-outline"></i>
                     <span>{{ trans('dashboard.components.components') }}</span>
-                    <span class="label label-info">{{ $componentCount }}</span>
+                    <span class="badge badge-info">{{ $componentCount }}</span>
                 </a>
             </li>
             <li {!! set_active('dashboard/metrics*') !!}>
@@ -60,7 +60,7 @@
                 <a href="{{ cachet_route('dashboard.subscribers') }}">
                     <i class="ion ion-ios-email-outline"></i>
                     <span>{{ trans('dashboard.subscribers.subscribers') }}</span>
-                    <span class="label label-info">{{ $subscriberCount }}</span>
+                    <span class="badge badge-info">{{ $subscriberCount }}</span>
                 </a>
             </li>
             <li {!! set_active('dashboard/team*') !!}>

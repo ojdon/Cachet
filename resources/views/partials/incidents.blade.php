@@ -19,7 +19,7 @@
                             </div>
                             @endif
                             @if($incident->component)
-                            <span class="label label-default">{{ $incident->component->name }}</span>
+                            <span class="badge badge-default">{{ $incident->component->name }}</span>
                             @endif
                             <strong>{{ $incident->name }}</strong>{{ $incident->isScheduled ? trans("cachet.incidents.scheduled_at", ["timestamp" => $incident->scheduled_at_diff]) : null }}
                             <br>

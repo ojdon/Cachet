@@ -14,7 +14,7 @@
                 @if($schedule->components->count() > 0)
                 <hr>
                 @foreach($schedule->components as $affectedComponent)
-                <span class="label label-primary">{{ $affectedComponent->component->name }}</span>
+                <span class="badge badge-primary">{{ $affectedComponent->component->name }}</span>
                 @endforeach
                 @endif
             </div>

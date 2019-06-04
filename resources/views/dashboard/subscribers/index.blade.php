@@ -44,7 +44,7 @@
                         <p>{{ trans('dashboard.subscribers.global') }}</p>
                         @elseif($subscriber->subscriptions->isNotEmpty())
                         {!! $subscriber->subscriptions->map(function ($subscription) {
-                            return sprintf('<span class="label label-primary">%s</span>', $subscription->component->name);
+                            return sprintf('<span class="badge badge-primary">%s</span>', $subscription->component->name);
                         })->implode(' ') !!}
                         @else
                         <p>{{ trans('dashboard.subscribers.no_subscriptions') }}</p>
