@@ -9,6 +9,9 @@ body.dashboard {
                 margin-top: 60px;
             }
         }
+        .badge {
+            @extend .float-right;
+        }
         .header {
             position: relative;
             top: 0;
@@ -91,7 +94,7 @@ body.dashboard {
     }
 
     // Header media queries
-    @include media-breakpoint-down(sm) {
+    @include media-breakpoint-down(md) {
         .page-content {
             .content-wrapper {
                 padding-left: 20px;
@@ -108,7 +111,7 @@ body.dashboard {
         }
     }
 
-    @include media-breakpoint-only(sm) {
+    @include media-breakpoint-only(md) {
         .page-content {
             .header.fixed {
                 padding-left: 120px;

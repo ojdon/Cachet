@@ -10,7 +10,7 @@ $border-radius-base:        3px !default;
 $border-radius-large:       4px !default;
 $border-radius-small:       2px !default;
 
-//** Tooltip background color
+// Tooltip background color
 $tooltip-bg:                #333 !default;
 $tooltip-opacity:           .9 !default;
 $base-background-color:     #f1f1f1;
@@ -39,3 +39,6 @@ $sidebar-phone-width:       75%;
 $sidebar-active-color:      #00695C;
 
 $paragraph-margin-bottom: 0;
+$link-color: #67808c; // Where did this colour come from?
+$font-weight-bold:  600;
+$font-weight-bolder: 700;

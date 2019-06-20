@@ -11,8 +11,8 @@
         <div class="clearfix"></div>
         <div class="quick-add-incident">
             <a class="btn btn-block btn-info" href="{{ cachet_route('dashboard.incidents.create') }}">
-                <i class="ion ion-android-checkmark-circle d-sm-none"></i>
-                <span class="d-sm-block">{{ trans('dashboard.incidents.add.title') }}</span>
+                <i class="ion ion-android-checkmark-circle d-md-none"></i>
+                <span class="d-none d-md-block">{{ trans('dashboard.incidents.add.title') }}</span>
             </a>
         </div>
         <ul>

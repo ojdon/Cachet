@@ -4511,7 +4511,7 @@ ul ol {
 }
 
 dt {
-  font-weight: 700;
+  font-weight: 600;
 }
 
 dd {
@@ -4525,7 +4525,7 @@ blockquote {
 
 b,
 strong {
-  font-weight: bolder;
+  font-weight: 700;
 }
 
 small {
@@ -4549,13 +4549,13 @@ sup {
 }
 
 a {
-  color: #007bff;
+  color: #67808c;
   text-decoration: none;
   background-color: transparent;
 }
 
 a:hover {
-  color: #0056b3;
+  color: #475860;
   text-decoration: underline;
 }
 
@@ -4922,7 +4922,7 @@ kbd {
 kbd kbd {
   padding: 0;
   font-size: 100%;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 pre {
@@ -7557,12 +7557,12 @@ fieldset:disabled a.btn {
 
 .btn-link {
   font-weight: 400;
-  color: #007bff;
+  color: #67808c;
   text-decoration: none;
 }
 
 .btn-link:hover {
-  color: #0056b3;
+  color: #475860;
   text-decoration: underline;
 }
 
@@ -9565,14 +9565,14 @@ input[type="button"].btn-block {
   padding: 0.5rem 0.75rem;
   margin-left: -1px;
   line-height: 1.25;
-  color: #007bff;
+  color: #67808c;
   background-color: #fff;
   border: 1px solid #dee2e6;
 }
 
 .page-link:hover {
   z-index: 2;
-  color: #0056b3;
+  color: #475860;
   text-decoration: none;
   background-color: #e9ecef;
   border-color: #dee2e6;
@@ -9647,7 +9647,7 @@ input[type="button"].btn-block {
   display: inline-block;
   padding: 0.25em 0.4em;
   font-size: 75%;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1;
   text-align: center;
   white-space: nowrap;
@@ -9845,7 +9845,7 @@ a.badge-dark:focus, a.badge-dark.focus {
 }
 
 .alert-link {
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .alert-dismissible {
@@ -10393,7 +10393,7 @@ a.badge-dark:focus, a.badge-dark.focus {
 .close {
   float: right;
   font-size: 1.5rem;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1;
   color: #000;
   text-shadow: 0 1px 0 #fff;
@@ -14739,11 +14739,11 @@ button.bg-dark:focus {
 }
 
 .font-weight-bold {
-  font-weight: 700 !important;
+  font-weight: 600 !important;
 }
 
 .font-weight-bolder {
-  font-weight: bolder !important;
+  font-weight: 700 !important;
 }
 
 .font-italic {
@@ -15980,7 +15980,7 @@ textarea {
   border-color: #66afe9;
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 991.98px) {
   .component-inline .radio-items {
     text-align: left;
   }

@@ -43,7 +43,7 @@ textarea {
 }
 
 .component-inline {
-    @include media-breakpoint-down(sm) {
+    @include media-breakpoint-down(md) {
         .radio-items {
             text-align: left;
             .radio-inline {
