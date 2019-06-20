@@ -12594,7 +12594,7 @@ button.bg-dark:focus {
   float: left !important;
 }
 
-.float-right, body.dashboard .page-content .badge {
+.float-right, body.dashboard .sidebar .sidebar-inner > ul > li > a .badge, body.dashboard .page-content .badge {
   float: right !important;
 }
 
@@ -16778,12 +16778,12 @@ body.dashboard .sidebar .sidebar-inner ul li a:focus, body.dashboard .sidebar .s
   text-decoration: none;
 }
 
-body.dashboard .sidebar .sidebar-inner ul li a span.label {
+body.dashboard .sidebar .sidebar-inner ul li a span.badge {
   float: right;
   margin: 3px 0;
 }
 
-body.dashboard .sidebar .sidebar-inner ul li a span.label.label-info {
+body.dashboard .sidebar .sidebar-inner ul li a span.badge.badge-info {
   background-color: #6DB81C;
 }
 

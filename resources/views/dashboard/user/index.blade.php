@@ -38,7 +38,9 @@
                                 <label>{{ trans('forms.user.api-token') }}</label>
                                 <div class="input-group">
                                     <input type="text" class="form-control" name="api_key" readonly value="{{ $currentUser->api_key }}" placeholder="{{ trans('forms.user.api-token') }}">
-                                    <a href="{{ cachet_route('dashboard.user.api.regen', [$currentUser->id]) }}" class="input-group-addon btn btn-danger">{{ trans('cachet.api.regenerate') }}</a>
+                                    <div class="input-group-append">
+                                        <a href="{{ cachet_route('dashboard.user.api.regen', [$currentUser->id]) }}" class="btn btn-danger">{{ trans('cachet.api.regenerate') }}</a>
+                                    </div>
                                 </div>
                                 <span class="help-block">{{ trans('forms.user.api-token-help') }}</span>
                             </div>
