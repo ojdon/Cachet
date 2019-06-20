@@ -5,6 +5,19 @@ $brand-info:                $cachet-blue !default;
 $brand-warning:             $cachet-orange !default;
 $brand-danger:              $cachet-red !default;
 
+$theme-colors: ();
+$theme-colors: map-merge(
+  (
+    "primary":    $brand-primary,
+    "secondary":  #9b9b9b,
+    "success":    $brand-success,
+    "info":       $brand-info,
+    "warning":    $brand-warning,
+    "danger":     $brand-danger
+  ),
+  $theme-colors
+);
+
 // Default border radius
 $border-radius-base:        3px !default;
 $border-radius-large:       4px !default;
@@ -26,6 +39,9 @@ $base-link-hover-color:     #e9e9e9;
 
 $header-background-color:   lighten(#00695C, 10%);
 $header-border-color:       1px solid darken($header-background-color, 10%);
+
+$hr-border-color:           #DEDEDE;
+$hr-border-width: 			3px;
 
 $sidebar-transition-speed:  .2s;
 $sidebar-background-color:  #78909c;

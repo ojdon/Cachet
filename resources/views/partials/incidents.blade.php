@@ -10,8 +10,8 @@
                     </div>
                 </div>
                 <div class="col-10 col-offset-2 col-sm-11 col-sm-offset-0">
-                    <div class="card -message incident">
-                        <div class="card-heading">
+                    <div class=" panel-message incident">
+               
                             @if($currentUser)
                             <div class="pull-right btn-group">
                                 <a href="{{ cachet_route('dashboard.incidents.edit', ['id' => $incident->id]) }}" class="btn btn-default">{{ trans('forms.edit') }}</a>
@@ -26,8 +26,8 @@
                             <small class="date">
                                 <a href="{{ cachet_route('incident', ['id' => $incident->id]) }}" class="links"><abbr class="timeago" data-toggle="tooltip" data-placement="right" title="{{ $incident->timestamp_formatted }}" data-timeago="{{ $incident->timestamp_iso }}"></abbr></a>
                             </small>
-                        </div>
-                        <div class="card-body markdown-body">
+                       
+                        <div class="markdown-body">
                             {!! $incident->formatted_message !!}
                         </div>
                         @if($incident->updates->isNotEmpty())
@@ -54,10 +54,10 @@
             </div>
         </div>
         @empty
-        <div class="card -message incident">
-            <div class="card-body">
+        <div class="panel-message incident">
+           
                 <p>{{ trans('cachet.incidents.none') }}</p>
-            </div>
+        
         </div>
         @endforelse
     </div>

@@ -1,9 +1,23 @@
 @if($daysToShow > 0 && $allIncidents)
 <div class="section-timeline">
-    <h1>{{ trans('cachet.incidents.past') }}</h1>
+
+    
+
+    
     @foreach($allIncidents as $date => $incidents)
-    @include('partials.incidents', [@compact($date), @compact($incidents)])
+    <div class="card mb-2">
+        @if($loop->first)
+            <div class="card-header bg-secondary text-uppercase">
+                <h5><i class="ion ion-time-restore"></i> {{ trans('cachet.incidents.past') }}</h5>
+            </div>
+        @endif
+        <div class="card-body">
+            @include('partials.incidents', [@compact($date), @compact($incidents)])
+        </div>
+    </div>
+    
     @endforeach
+
 </div>
 
 <nav>

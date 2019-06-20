@@ -1,9 +1,9 @@
 body.status-page {
     padding-top: 40px;
     font-family: $base-font-family;
-    background-color: #F0F3F4;
+    background-color: #F1F1F1;
     color: #333333;
-    font-size: 1.4em;
+    //font-size: 1.4em;
     font-weight: $base-font-weight;
     -webkit-font-smoothing: antialiased;
 
@@ -15,11 +15,7 @@ body.status-page {
         margin-top: 10px;
         margin-bottom: 10px;
     }
-
-    h1, h2, h3, h4, h5 {
-        margin-bottom: 20px;
-    }
-
+    
     img {
         box-sizing: border-box;
 
@@ -33,6 +29,7 @@ body.status-page {
 
     p, strong {
         color: $cachet-base-dark;
+        margin: 0;
     }
 
     .tooltip {
@@ -61,10 +58,6 @@ body.status-page {
 
     .text-danger, .text-component-4 {
         color: $cachet_red;
-    }
-
-    .container {
-        max-width: 960px;
     }
 
     .page-header {
@@ -337,15 +330,9 @@ body.status-page {
     }
 
     footer {
-        position: absolute;
-        width: 100%;
-        bottom: 0;
-        height: 60px;
         padding: 30px 0 60px 0;
         border-top: 1px solid $cachet_gray_light;
         color: $cachet-gray-darker;
-        font-size: 13px;
-        line-height: 30px;
         text-align: center;
         text-shadow: 0 1px 0 rgba(255,255,255,0.5);
 

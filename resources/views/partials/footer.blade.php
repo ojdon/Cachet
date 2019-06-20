@@ -1,10 +1,8 @@
 @if($appFooter)
 {!! $appFooter !!}
 @else
-<footer class="footer">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-4">
+<footer class="footer container">
+    <div class="text-center">
                 @if($showSupport)
                 <p>
                     {!! trans('cachet.powered_by') !!}
@@ -13,9 +11,8 @@
                     @endif
                 </p>
                 @endif
-            </div>
-            <div class="col-sm-8">
-                <ul class="list-inline">
+         
+                <ul class="list-inline text-center mx-auto my-3">
                     @if($currentUser || $dashboardLink)
                     <li class="list-inline-item">
                         <a class="btn btn-link" href="{{ cachet_route('dashboard') }}">{{ trans('dashboard.dashboard') }}</a>
@@ -32,8 +29,7 @@
                     </li>
                     @endif
                 </ul>
-            </div>
-        </div>
+         
     </div>
 </footer>
 @endif

@@ -12,14 +12,8 @@
             </span>
         </div>
         <div class="content-wrapper">
-            <div class="row">
-                <div class="col-md-12">
                     <div class="alert alert-info hidden" id="update-alert">{!! trans('cachet.system.update') !!}</div>
-                </div>
-            </div>
-
-            <div class="row">
-              <div class="col-md-12">
+     
                   <div class="section-components no-select mb-3">
                       @if(!$componentGroups->isEmpty() || !$ungroupedComponents->isEmpty())
                       @include('dashboard.partials.components')
@@ -31,11 +25,10 @@
                       </ul>
                       @endif
                   </div>
-              </div>
-            </div>
+        
 
             <div class="row">
-                <div class="col-sm-12 col-lg-6">
+                <div class="col-lg-6">
                     <div class="stats-widget">
                         <div class="stats-top">
                             <span class="stats-value"><a href="{{ cachet_route('dashboard.incidents') }}">{{ $incidents->reduce(function($carry, $incident) { return $carry + count($incident); }) }}</a></span>
@@ -47,7 +40,7 @@
                     </div>
                 </div>
 
-                <div class="col-sm-12 col-lg-6">
+                <div class="col-lg-6">
                     <div class="stats-widget">
                         <div class="stats-top">
                             <span class="stats-value"><a href="{{ cachet_route('dashboard.subscribers') }}">{{ $subscribers->reduce(function($carry, $subscribers) { return $carry + count($subscribers); }) }}</a></span>
@@ -61,7 +54,7 @@
             </div>
 
             <div class="row">
-                <div class="col-sm-12 col-lg-6">
+                <div class="col-lg-6">
                     <div class="stats-widget">
                         <div class="stats-top">
                             <span class="stats-value">{{ trans('dashboard.widgets.support') }}</span>
@@ -71,7 +64,7 @@
                 </div>
 
                 @if($entries)
-                <div class="col-sm-12 col-lg-6">
+                <div class="col-lg-6">
                     <div class="stats-widget">
                         <div class='stats-top'>
                             <span class='stats-value'>{{ trans('dashboard.widgets.news') }}</span>

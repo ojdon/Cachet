@@ -1,3 +1,3 @@
-<div class="section-status">
-    <div class="alert alert-{{ $systemStatus }}">{{ $systemMessage }}</div>
-</div>
+<section class="section-status">
+    <div class="alert alert-{{ $systemStatus }} text-uppercase">{{ $systemMessage }}</div>
+</section>
