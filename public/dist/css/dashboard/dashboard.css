@@ -16815,7 +16815,7 @@ body.dashboard .sidebar .bottom-menu-sidebar ul > li a {
   background: #fff;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   body.dashboard .sidebar {
     width: 235px;
   }
@@ -16930,7 +16930,7 @@ body.dashboard .sub-sidebar + .content-wrapper {
   padding-right: 40px !important;
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 767.98px) {
   body.dashboard .sub-sidebar {
     position: relative;
     margin-left: 0;

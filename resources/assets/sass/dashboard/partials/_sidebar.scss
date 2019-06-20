@@ -159,7 +159,7 @@ body.dashboard {
     }
 
     // Sidebar media queries
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(sm) {
         .sidebar {
             width: $sidebar-normal-width;
         }
@@ -278,7 +278,7 @@ body.dashboard {
     }
 
     // Sub-sidebar media queries
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(sm) {
         .sub-sidebar {
             position: relative;
             margin-left: 0;
