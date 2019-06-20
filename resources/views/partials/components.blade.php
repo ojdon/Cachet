@@ -6,7 +6,7 @@
         <i class="{{ $componentGroup->collapse_class }} group-toggle"></i>
         <strong>{{ $componentGroup->name }}</strong>
 
-        <div class="pull-right">
+        <div class="float-right">
             <i class="ion ion-ios-circle-filled text-component-{{ $componentGroup->lowest_status }} {{ $componentGroup->lowest_status_color }}" data-toggle="tooltip" title="{{ $componentGroup->lowest_human_status }}"></i>
         </div>
     </li>
@@ -24,7 +24,7 @@
     <li class="list-group-item group-name">
         <strong>{{ trans('cachet.components.group.other') }}</strong>
 
-        <div class="pull-right">
+        <div class="float-right">
             <i class="ion ion-ios-circle-filled text-component-{{ $ungroupedComponents->max('status') }} {{ $ungroupedComponents->first()->status_color }}" data-toggle="tooltip" title="{{ $ungroupedComponents->first()->human_status }}"></i>
         </div>
     </li>

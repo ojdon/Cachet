@@ -31,10 +31,10 @@
                     </div>
                 </div>
                 <div class="col-10 col-offset-2 col-sm-11 col-sm-offset-0">
-                    <div class="card -message incident">
+                    <div class="cardcard-message incident">
                         <div class="card-body">
                             @if($currentUser)
-                            <div class="pull-right btn-group">
+                            <div class="float-right btn-group">
                                 <a href="{{ cachet_route('dashboard.incidents.updates.edit', ['incident' => $incident, 'incident_update' => $update]) }}" class="btn btn-default">{{ trans('forms.edit') }}</a>
                             </div>
                             @endif

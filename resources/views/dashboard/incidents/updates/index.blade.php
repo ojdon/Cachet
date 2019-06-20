@@ -12,7 +12,7 @@
 </div>
 <div class="content-wrapper">
     <div class="header sub-header">
-        <a class="btn btn-md btn-success pull-right" href="{{ cachet_route('dashboard.incidents.updates.create', [$incident->id]) }}">
+        <a class="btn btn-md btn-success float-right" href="{{ cachet_route('dashboard.incidents.updates.create', [$incident->id]) }}">
             {{ trans('dashboard.incidents.updates.add.title') }}
         </a>
         <div class="clearfix"></div>

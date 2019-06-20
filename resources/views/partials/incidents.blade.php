@@ -13,7 +13,7 @@
                     <div class="cardcard-message incident">
                         <div class="card-heading">
                             @if($currentUser)
-                            <div class="pull-right btn-group">
+                            <div class="float-right btn-group">
                                 <a href="{{ cachet_route('dashboard.incidents.edit', ['id' => $incident->id]) }}" class="btn btn-default">{{ trans('forms.edit') }}</a>
                                 <a href="{{ cachet_route('dashboard.incidents.delete', ['id' => $incident->id], 'delete') }}" class="btn btn-danger confirm-action" data-method='DELETE'>{{ trans('forms.delete') }}</a>
                             </div>
@@ -42,7 +42,7 @@
                                         data-timeago="{{ $update->timestamp_iso }}">
                                     </abbr>
                                 </small>
-                                <span class="ion-ios-arrow-right pull-right"></span>
+                                <span class="ion-ios-arrow-right float-right"></span>
 
                             </a>
                             @endforeach

@@ -8,7 +8,7 @@
             <span class="uppercase">
                 <i class="ion ion-android-calendar"></i> {{ trans('dashboard.schedule.schedule') }}
             </span>
-            <a class="btn btn-md btn-success pull-right" href="{{ cachet_route('dashboard.schedule.create') }}">
+            <a class="btn btn-md btn-success float-right" href="{{ cachet_route('dashboard.schedule.create') }}">
                 {{ trans('dashboard.schedule.add.title') }}
             </a>
             <div class="clearfix"></div>

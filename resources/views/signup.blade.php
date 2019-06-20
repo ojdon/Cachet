@@ -3,7 +3,7 @@
 @section('title', trans('cachet.signup.title').' | '.$siteTitle)
 
 @section('content')
-<div class="pull-right">
+<div class="float-right">
     <p><a class="btn btn-success btn-outline" href="{{ cachet_route('status-page') }}"><i class="ion ion-home"></i></a></p>
 </div>
 
@@ -23,7 +23,7 @@
 
 @include('partials.errors')
 
-<div class="card -message">
+<div class="cardcard-message">
     <div class="card-heading">
         <strong>{{ trans('cachet.signup.title') }}</strong>
     </div>

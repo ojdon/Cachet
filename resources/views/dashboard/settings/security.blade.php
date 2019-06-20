@@ -57,7 +57,7 @@
                             @foreach($unsecureUsers as $user)
                             <div class="list-group-item">
                                 <strong>{{ $user->username }}</strong>
-                                <span class="badge badge-danger pull-right"><i class="ion ion-ios-unlocked"></i></span>
+                                <span class="badge badge-danger float-right"><i class="ion ion-ios-unlocked"></i></span>
                             </div>
                             @endforeach
                         </div>

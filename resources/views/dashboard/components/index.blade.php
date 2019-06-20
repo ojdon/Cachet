@@ -8,7 +8,7 @@
             <span class="uppercase">
                 <i class="ion ion-ios-browsers-outline"></i> {{ trans('dashboard.components.components') }}
             </span>
-            <a class="btn btn-md btn-success pull-right" href="{{ cachet_route('dashboard.components.create') }}">
+            <a class="btn btn-md btn-success float-right" href="{{ cachet_route('dashboard.components.create') }}">
                 {{ trans('dashboard.components.add.title') }}
             </a>
             <div class="clearfix"></div>

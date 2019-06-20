@@ -23,7 +23,7 @@
                     </div>
                 </div>
                 <div class="col-10 col-offset-2 col-sm-11 col-sm-offset-0">
-                    <div class="card -message incident">
+                    <div class="cardcard-message incident">
                         <div class="card-heading">
                             <strong>{{ $schedule->name }}</strong>{{ trans("cachet.incidents.scheduled_at", ["timestamp" => $schedule->scheduled_at_diff]) }}
                         </div>

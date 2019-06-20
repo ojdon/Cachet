@@ -9,7 +9,7 @@
         <i class="ion ion-ios-people-outline"></i> {{ trans('dashboard.team.team') }}
     </span>
     @if($currentUser->isAdmin)
-    <div class="button-group pull-right">
+    <div class="button-group float-right">
         <a class="btn btn-sm btn-success" href="{{ cachet_route('dashboard.team.invite') }}">
             {{ trans('dashboard.team.invite.title') }}
         </a>
