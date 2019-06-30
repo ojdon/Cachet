@@ -31,7 +31,7 @@ body.dashboard {
         margin-right: -$sidebar-normal-width;;
     }
 
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-only(md) {
         .wrapper {
             padding-left: 80px;
         }

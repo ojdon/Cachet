@@ -4,7 +4,7 @@
 <dashboard inline-template :welcome-user="{{ $welcomeUser ? 'true' : 'false' }}" :user="{{ $currentUser }}">
     <div>
         <div class="header">
-            <div class="sidebar-toggler d-sm-none">
+            <div class="sidebar-toggler d-block-inline d-md-none">
                 <i class="ion ion-navicon"></i>
             </div>
             <span class="uppercase">

@@ -159,7 +159,7 @@ body.dashboard {
     }
 
     // Sidebar media queries
-    @include media-breakpoint-up(sm) {
+    @include media-breakpoint-up(md) {
         .sidebar {
             width: $sidebar-normal-width;
         }
@@ -169,7 +169,7 @@ body.dashboard {
         }
     }
 
-    @include media-breakpoint-down(sm) {
+    @include media-breakpoint-only(sm) {
         .sidebar {
             width: 80px;
             left: 150px;
@@ -292,13 +292,13 @@ body.dashboard {
 
     }
 
-    // @include media-breakpoint-down(md) {
-    //     .sub-sidebar {
-    //         margin-left: 80px;
-    //         width: 25%;
-    //         + .content-wrapper {
-    //             padding-left: 45px !important;
-    //         }
-    //     }
-    // }
+    @include media-breakpoint-down(md) {
+        .sub-sidebar {
+            margin-left: 80px;
+            width: 25%;
+            + .content-wrapper {
+                padding-left: 45px !important;
+            }
+        }
+    }
 }
