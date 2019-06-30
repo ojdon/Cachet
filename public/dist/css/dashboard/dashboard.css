@@ -16879,7 +16879,7 @@ body.dashboard .sub-sidebar h3 {
   margin: 0;
   text-align: center;
   font-size: 19px;
-  padding: 30px 15px 15px 15px;
+  padding: 26px 15px 15px 15px;
 }
 
 body.dashboard .sub-sidebar hr {
@@ -16940,16 +16940,6 @@ body.dashboard .sub-sidebar + .content-wrapper {
     margin-left: 0;
     padding-left: 40px !important;
     width: 100%;
-  }
-}
-
-@media (min-width: 768px) {
-  body.dashboard .sub-sidebar {
-    margin-left: 80px;
-    width: 25%;
-  }
-  body.dashboard .sub-sidebar + .content-wrapper {
-    padding-left: 45px !important;
   }
 }
 
