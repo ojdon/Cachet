@@ -10,6 +10,10 @@ body.dashboard {
     line-height: $base-line-height;
     -webkit-font-smoothing: antialiased;
 
+    .lead {
+        margin-bottom: 1rem;
+    }
+
     .wrapper {
         padding-left: 0;
         -webkit-transition: all 0.5s ease;
