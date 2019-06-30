@@ -17866,6 +17866,10 @@ body.dashboard .page-content .user-grid .user .email {
   color: #999;
 }
 
+.badge {
+  padding: .2em .6em .3em;
+}
+
 body.login .form-bg {
   border-radius: 10px;
   margin: auto;
