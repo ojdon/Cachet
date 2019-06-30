@@ -24,7 +24,7 @@
                             <span class="drag-handle"><i class="ion ion-drag"></i></span>
                             @endif
                             {{ $group->name }}
-                            <span class="badge badge-info">{{ $group->components->count() }}</span>
+                            <span class="badge badge-info float-none">{{ $group->components->count() }}</span>
                         </h4>
                     </div>
                     <div class="col-6 text-right">

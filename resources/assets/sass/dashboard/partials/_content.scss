@@ -10,7 +10,7 @@ body.dashboard {
             }
         }
         .badge {
-            @extend .float-right;
+            float: right;
         }
         .header {
             position: relative;

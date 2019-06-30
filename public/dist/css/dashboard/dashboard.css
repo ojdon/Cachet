@@ -4820,7 +4820,7 @@ hr {
   margin-top: 1rem;
   margin-bottom: 1rem;
   border: 0;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-top: 1px solid #f0f0f0;
 }
 
 small,
@@ -12594,7 +12594,7 @@ button.bg-dark:focus {
   float: left !important;
 }
 
-.float-right, body.dashboard .sidebar .sidebar-inner > ul > li > a .badge, body.dashboard .page-content .badge {
+.float-right, body.dashboard .sidebar .sidebar-inner > ul > li > a .badge {
   float: right !important;
 }
 
@@ -16959,6 +16959,10 @@ body.dashboard .page-content .content-wrapper {
 
 body.dashboard .page-content .content-wrapper.header-fixed {
   margin-top: 60px;
+}
+
+body.dashboard .page-content .badge {
+  float: right;
 }
 
 body.dashboard .page-content .header {
