@@ -16567,10 +16567,6 @@ body.dashboard {
   -webkit-font-smoothing: antialiased;
 }
 
-body.dashboard .lead {
-  margin-bottom: 1rem;
-}
-
 body.dashboard .wrapper {
   padding-left: 0;
   -webkit-transition: all 0.5s ease;
@@ -16618,6 +16614,11 @@ body.dashboard .wrapper {
   display: table;
   height: 100%;
   table-layout: fixed;
+}
+
+/* Default bootstrap 3 palette */
+.text-danger {
+  color: #a94442 !important;
 }
 
 body.dashboard .navbar {
@@ -17868,6 +17869,10 @@ body.dashboard .page-content .user-grid .user .email {
 
 .badge {
   padding: .2em .6em .3em;
+}
+
+.lead {
+  margin-bottom: 1rem;
 }
 
 body.login .form-bg {

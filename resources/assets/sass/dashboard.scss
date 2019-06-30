@@ -6,11 +6,13 @@
 // Styles for partials
 @import "dashboard/partials/base";
 @import "dashboard/partials/wrapper";
+@import "dashboard/partials/legacy";
 @import "dashboard/partials/navbar";
 @import "dashboard/partials/sidebar";
 @import "dashboard/partials/content";
 @import "dashboard/partials/modals";
 @import "dashboard/partials/badges";
+@import "dashboard/partials/type";
 
 // Styles for specific page
 @import "dashboard/pages/login";
