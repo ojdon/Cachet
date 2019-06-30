@@ -5,6 +5,12 @@ $brand-info:                $cachet-blue !default;
 $brand-warning:             $cachet-orange !default;
 $brand-danger:              $cachet-red !default;
 
+$primary:       $brand-primary;
+$success:       $brand-success;
+$info:          $brand-info;
+$warning:       $brand-warning;
+$danger:        $brand-danger;
+
 // Default border radius
 $border-radius-base:        3px !default;
 $border-radius-large:       4px !default;

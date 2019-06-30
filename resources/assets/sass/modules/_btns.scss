@@ -34,7 +34,7 @@
     }
     &.btn-primary {
         //@include pretty-buttons($btn-primary-color, $btn-primary-bg);
-        @include pretty-buttons(map-get($colors, 'light'), map-get($theme-colors, 'primary'));
+        @include pretty-buttons(map-get($colors, 'dark'), map-get($theme-colors, 'primary'));
     }
     &.btn-success {
         //@include pretty-buttons($btn-success-color, $btn-success-bg);
@@ -94,4 +94,9 @@
 .btn-warning.btn-outline:hover,
 .btn-danger.btn-outline:hover {
     color: #fff;
+}
+
+/** Bootstrap 4 temp fix **/
+.btn-success, .btn-danger {
+    color: #fff !important;
 }
