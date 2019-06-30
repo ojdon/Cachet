@@ -11511,7 +11511,7 @@ button.bg-dark:focus {
   content: "";
 }
 
-.d-none, body.dashboard .sidebar .sidebar-inner > ul > li > a > span, body.dashboard .sidebar .sidebar-inner > ul > li > a .badge, body.dashboard .sidebar .bottom-menu-sidebar {
+.d-none, body.dashboard .sidebar .sidebar-inner .quick-add-incident i, body.dashboard .sidebar .bottom-menu-sidebar {
   display: none !important;
 }
 
@@ -11519,7 +11519,7 @@ button.bg-dark:focus {
   display: inline !important;
 }
 
-.d-inline-block {
+.d-inline-block, body.dashboard .sidebar .sidebar-inner .quick-add-incident span, body.dashboard .sidebar .sidebar-inner > ul > li > a > span, body.dashboard .sidebar .sidebar-inner > ul > li > a .badge {
   display: inline-block !important;
 }
 
@@ -11586,16 +11586,16 @@ button.bg-dark:focus {
 }
 
 @media (min-width: 768px) {
-  .d-md-none, body.dashboard .sidebar .sidebar-inner .quick-add-incident i {
+  .d-md-none, body.dashboard .sidebar .sidebar-inner .quick-add-incident span, body.dashboard .sidebar .sidebar-inner > ul > li > a > span, body.dashboard .sidebar .sidebar-inner > ul > li > a .badge {
     display: none !important;
   }
   .d-md-inline {
     display: inline !important;
   }
-  .d-md-inline-block, body.dashboard .sidebar .sidebar-inner > ul > li > a > span, body.dashboard .sidebar .sidebar-inner > ul > li > a .badge, body.dashboard .sidebar .bottom-menu-sidebar {
+  .d-md-inline-block, body.dashboard .sidebar .sidebar-inner .quick-add-incident i {
     display: inline-block !important;
   }
-  .d-md-block, body.dashboard .sidebar .sidebar-inner .quick-add-incident span {
+  .d-md-block {
     display: block !important;
   }
   .d-md-table {
@@ -11620,16 +11620,16 @@ button.bg-dark:focus {
 }
 
 @media (min-width: 992px) {
-  .d-lg-none {
+  .d-lg-none, body.dashboard .sidebar .sidebar-inner .quick-add-incident i {
     display: none !important;
   }
   .d-lg-inline {
     display: inline !important;
   }
-  .d-lg-inline-block {
+  .d-lg-inline-block, body.dashboard .sidebar .sidebar-inner > ul > li > a > span, body.dashboard .sidebar .sidebar-inner > ul > li > a .badge, body.dashboard .sidebar .bottom-menu-sidebar {
     display: inline-block !important;
   }
-  .d-lg-block {
+  .d-lg-block, body.dashboard .sidebar .sidebar-inner .quick-add-incident span {
     display: block !important;
   }
   .d-lg-table {
@@ -16592,7 +16592,7 @@ body.dashboard .wrapper.toggled .page-content {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   body.dashboard .wrapper {
     padding-left: 235px;
   }
@@ -16834,7 +16834,7 @@ body.dashboard .sidebar .bottom-menu-sidebar ul > li a {
   }
 }
 
-@media (min-width: 576px) and (max-width: 767.98px) {
+@media (min-width: 768px) and (max-width: 991.98px) {
   body.dashboard .sidebar {
     width: 80px;
     left: 150px;

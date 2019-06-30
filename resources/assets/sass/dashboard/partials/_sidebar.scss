@@ -51,10 +51,14 @@ body.dashboard {
                 @extend .text-center;
                 padding: 10px;
                 i {
-                    @extend .d-md-none;
+                    @extend .d-none;
+                    @extend .d-md-inline-block;
+                    @extend .d-lg-none;
                 }
                 span {
-                    @extend .d-md-block;
+                    @extend .d-inline-block;
+                    @extend .d-md-none;
+                    @extend .d-lg-block;
                 }
             }
             ul {
@@ -123,19 +127,21 @@ body.dashboard {
             }
             & > ul > li > a {
                 & > span {
-                    @extend .d-none;
-                    @extend .d-md-inline-block;
+                    @extend .d-inline-block;
+                    @extend .d-md-none;
+                    @extend .d-lg-inline-block;
                 }
                 .badge {
-                    @extend .d-none;
-                    @extend .d-md-inline-block;
+                    @extend .d-inline-block;
+                    @extend .d-md-none;
+                    @extend .d-lg-inline-block;
                     @extend .float-right;
                 }
             }
         }
         .bottom-menu-sidebar {
             @extend .d-none;
-            @extend .d-md-inline-block;
+            @extend .d-lg-inline-block;
             position: fixed;
             bottom: 0;
             width: 235px;
@@ -169,7 +175,7 @@ body.dashboard {
         }
     }
 
-    @include media-breakpoint-only(sm) {
+    @include media-breakpoint-only(md) {
         .sidebar {
             width: 80px;
             left: 150px;

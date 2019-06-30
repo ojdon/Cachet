@@ -37,7 +37,7 @@ body.dashboard {
         }
     }
 
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(lg) {
         .wrapper {
             padding-left: $sidebar-normal-width;
         }
