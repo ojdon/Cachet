@@ -16953,16 +16953,6 @@ body.dashboard .sub-sidebar + .content-wrapper {
   }
 }
 
-@media (max-width: 991.98px) {
-  body.dashboard .sub-sidebar {
-    margin-left: 80px;
-    width: 25%;
-  }
-  body.dashboard .sub-sidebar + .content-wrapper {
-    padding-left: 45px !important;
-  }
-}
-
 body.dashboard .page-content {
   width: 100%;
 }

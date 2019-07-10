@@ -298,13 +298,13 @@ body.dashboard {
 
     }
 
-    @include media-breakpoint-down(md) {
-        .sub-sidebar {
-            margin-left: 80px;
-            width: 25%;
-            + .content-wrapper {
-                padding-left: 45px !important;
-            }
-        }
-    }
+    // @include media-breakpoint-down(md) {
+    //     .sub-sidebar {
+    //         margin-left: 80px;
+    //         width: 25%;
+    //         + .content-wrapper {
+    //             padding-left: 45px !important;
+    //         }
+    //     }
+    // }
 }
